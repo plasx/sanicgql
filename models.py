@@ -1,4 +1,3 @@
-# flask_sqlalchemy/models.py
 from sqlalchemy import *
 from sqlalchemy.orm import (scoped_session, sessionmaker, relationship,
                             backref)
@@ -38,5 +37,3 @@ class Inventory(Base):
     id = Column('id', Integer, primary_key=True)
     name = Column('name', String)
     sku = Column(String)
-
-# Base.metadata.create_all(bind=engine)
