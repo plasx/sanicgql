@@ -3,7 +3,7 @@ from flask import Flask
 from flask_graphql import GraphQLView
 
 from models import db_session
-from schema import schema, Department
+from schema import schema
 
 app = Flask(__name__)
 app.debug = True
@@ -13,7 +13,7 @@ app.add_url_rule(
     view_func=GraphQLView.as_view(
         'graphql',
         schema=schema,
-        graphiql=True # for having the GraphiQL interface
+        graphiql=True  # for having the GraphiQL interface
     )
 )
 
