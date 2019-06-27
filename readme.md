@@ -14,16 +14,19 @@ then run the application by running app.py
     python app.py
 
 
-you'll be able to access the URL of GRAPHIQL at http://localhost:8000/graphql
+you'll be able to access the URL of GRAPHIQL at http://localhost:8080/graphql
 
 
 # Sanic
 
 ### Running with Docker
+Execute the docker compose file by doing the following:
 
     docker-compose -f docker-compose.yml build sanicgql
     docker-compose -f docker-compose.yml run --service-ports sanicgql
-
+Then visit the URL below in your browser to access the graphql explorer
+    
+    http://localhost:8080/graphql
 ### Usage
 
     WIP
