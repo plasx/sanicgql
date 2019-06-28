@@ -13,10 +13,6 @@ then run the application by running app.py
 
     python app.py
 
-
-you'll be able to access the URL of GRAPHIQL at http://localhost:8080/graphql
-
-
 # Sanic
 
 ### Running with Docker
@@ -29,8 +25,14 @@ Then visit the URL below in your browser to access the graphql explorer
     http://localhost:8080/graphql
 ### Usage
 
-    WIP
+    Upon running the application you'll be able to access the URL of GRAPHIQL at http://localhost:8080/graphql
+### Mutations
+    you'll need to add something or else you'll have empty query
+### Query
     
+        query{
+            user
+        }
 ### Unit Tests
     
     WIP
